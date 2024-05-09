@@ -16,5 +16,5 @@ while True: #Bucle infinito
         cont =cont + 1
         cv2.imwrite("C:/Users/Aldo Pizarro/Desktop/Idat_Clases/CicloV/ProcesamientoImg/cap"+str(cont)+".jpg", frame) #Toma captura
     
-cap.release() #Apaga la camara
+cap.release() #Apaga la camara (Solo usar con camara)
 cv2.destroyAllWindows() #Destruye las ventanas
