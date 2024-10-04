@@ -1,0 +1,12 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo4 -N"D:\Users\Circuito\Desktop\PIC2023-III\Semana 13\AP_FINAL.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Users\Circuito\Desktop\PIC2023-III\Semana 13\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "AP_FINAL.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_Conversions.mcl" "__Lib_ADC_A_C.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_UART_c67.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	lib_i2c_lcd.h
+warning: 91	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	AP_FINAL.c
+diagnostics: 105	123	Compiled Successfully	AP_FINAL.c
+diagnostics: 0	127	All files Compiled in 203 ms	 
+hint: 0	1144	Used RAM (bytes): 170 (48%)  Free RAM (bytes): 182 (52%)	Used RAM (bytes): 170 (48%)  Free RAM (bytes): 182 (52%)
+hint: 0	1144	Used ROM (program words): 2002 (24%)  Free ROM (program words): 6190 (76%)	Used ROM (program words): 2002 (24%)  Free ROM (program words): 6190 (76%)
+diagnostics: 0	125	Project Linked Successfully	AP_FINAL.mcppi
+diagnostics: 0	128	Linked in 78 ms	 
+diagnostics: 0	129	Project 'AP_FINAL.mcppi' completed: 312 ms	 
+diagnostics: 0	103	Finished successfully: 13 Dic. 2023, 22:06:32	AP_FINAL.mcppi

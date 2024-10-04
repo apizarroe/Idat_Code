@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo4 -N"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana02\Actividad.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana02\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "Actividad.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	Actividad.c
+diagnostics: 14	123	Compiled Successfully	Actividad.c
+diagnostics: 0	127	All files Compiled in 203 ms	 
+hint: 0	1144	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)
+hint: 0	1144	Used ROM (program words): 67 (1%)  Free ROM (program words): 8125 (99%)	Used ROM (program words): 67 (1%)  Free ROM (program words): 8125 (99%)
+diagnostics: 0	125	Project Linked Successfully	Actividad.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'Actividad.mcppi' completed: 390 ms	 
+diagnostics: 0	103	Finished successfully: 07 Oct. 2023, 15:32:42	Actividad.mcppi

@@ -1,0 +1,7 @@
+main
+	__CC2DW
+		____DoICP
+	ADC_Init
+	ADC_Get_Sample
+		Delay_22us
+	Div_16X16_U

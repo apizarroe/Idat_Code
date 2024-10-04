@@ -1,0 +1,12 @@
+main
+	ADC_Init
+	PWM1_Init
+	PWM2_Init
+	PWM1_Start
+	PWM2_Start
+	PWM2_Set_Duty
+		Mul_16X16_U
+	ADC_Get_Sample
+		Delay_22us
+	PWM1_Set_Duty
+		Mul_16X16_U

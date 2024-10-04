@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo4 -N"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\EC01\EC01.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\EC01\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "EC01.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	EC01.c
+diagnostics: 53	123	Compiled Successfully	EC01.c
+diagnostics: 0	127	All files Compiled in 187 ms	 
+hint: 0	1144	Used RAM (bytes): 14 (4%)  Free RAM (bytes): 338 (96%)	Used RAM (bytes): 14 (4%)  Free RAM (bytes): 338 (96%)
+hint: 0	1144	Used ROM (program words): 115 (1%)  Free ROM (program words): 8077 (99%)	Used ROM (program words): 115 (1%)  Free ROM (program words): 8077 (99%)
+diagnostics: 0	125	Project Linked Successfully	EC01.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'EC01.mcppi' completed: 390 ms	 
+diagnostics: 0	103	Finished successfully: 15 Oct. 2023, 21:40:25	EC01.mcppi

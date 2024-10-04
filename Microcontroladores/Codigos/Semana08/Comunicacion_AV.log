@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo4 -N"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana08\Comunicacion_AV.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana08\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "Comunicacion_AV.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_Conversions.mcl" "__Lib_ADC_A_C.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	Comunicacion_AV.c
+diagnostics: 47	123	Compiled Successfully	Comunicacion_AV.c
+diagnostics: 0	127	All files Compiled in 250 ms	 
+hint: 0	1144	Used RAM (bytes): 38 (11%)  Free RAM (bytes): 314 (89%)	Used RAM (bytes): 38 (11%)  Free RAM (bytes): 314 (89%)
+hint: 0	1144	Used ROM (program words): 338 (4%)  Free ROM (program words): 7854 (96%)	Used ROM (program words): 338 (4%)  Free ROM (program words): 7854 (96%)
+diagnostics: 0	125	Project Linked Successfully	Comunicacion_AV.mcppi
+diagnostics: 0	128	Linked in 62 ms	 
+diagnostics: 0	129	Project 'Comunicacion_AV.mcppi' completed: 343 ms	 
+diagnostics: 0	103	Finished successfully: 26 Nov. 2023, 15:06:51	Comunicacion_AV.mcppi

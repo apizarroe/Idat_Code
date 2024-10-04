@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo4 -N"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana06\PWM02.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Aldo Pizarro\Desktop\Idat_Clases\CicloIV\MicroControladores\Proyectos\Semana06\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "PWM02.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_PWM_c21.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	PWM02.c
+diagnostics: 15	123	Compiled Successfully	PWM02.c
+diagnostics: 0	127	All files Compiled in 219 ms	 
+hint: 0	1144	Used RAM (bytes): 8 (2%)  Free RAM (bytes): 344 (98%)	Used RAM (bytes): 8 (2%)  Free RAM (bytes): 344 (98%)
+hint: 0	1144	Used ROM (program words): 186 (2%)  Free ROM (program words): 8006 (98%)	Used ROM (program words): 186 (2%)  Free ROM (program words): 8006 (98%)
+diagnostics: 0	125	Project Linked Successfully	PWM02.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'PWM02.mcppi' completed: 422 ms	 
+diagnostics: 0	103	Finished successfully: 03 Nov. 2023, 12:15:20	PWM02.mcppi

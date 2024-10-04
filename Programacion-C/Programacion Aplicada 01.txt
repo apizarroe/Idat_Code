@@ -1,0 +1,208 @@
+
+
+                     PROGRAMACION PRIMER PROGRAMA
+
+
+//programacion aplicada//
+//jean marco bastidas ayala//
+//alexis martinez carrasquero//
+#include<iostream>
+using namespace std;
+float Q[100],Acc=0 ,Qu;
+int n,i,potencia;
+
+int main() {
+    
+   cout<<"Cuantos sensores existen en tu sistema (Máximo 100): ";
+   cin>>n;
+   while(n>100){
+       cout << "Recuerda que son máximo 100 sensores."<<endl<<"Ingresa nuevamente el número de sensores: ";
+        cin >> n;
+   }
+   
+   if(n<=100){
+        for (i=1;i<=n;i++){
+        cout<<"ingrese medida "<<i<<" : ";
+        cin>>Q[i-1];
+    }
+   }
+   else{
+        cout<<"Recuerda que son máximo 100 sensores vuelva a ingresar  el numero de sensores";
+        return 1;
+   }
+    
+    for(i=1;i<=n;i++){
+    Acc=Acc+Q[i-1];
+}
+    Qu=Acc/n;
+    cout<<endl<<"El promedio de temperatura es: "<<Qu<<"°C";
+    
+    if(Qu<19){
+        potencia=100;
+    }
+    else if(Qu>19 && Qu<21){
+        potencia=75;
+    }
+     else if(Qu>21 && Qu<26){
+         potencia=50;
+    }
+      else if(Qu>26 && Qu<28){
+          potencia=25;
+    }
+    else{
+        potencia=0;
+    }
+    
+    cout<<endl<<"La potencia del radiador es: "<<potencia<<"%";
+    cout<<endl<<endl<<"Este programa ha sido realizado por:"<<endl<<"Alexis Martinez y Jean Bastidas"<<endl<<"  WI003952517      WI77269122"<<endl<<"Para el curso: Programacion aplicada 01";
+
+    return 0 ;
+}
+
+
+
+                           PROGRAMACION SEGUNDO PROGRAMA
+
+
+
+//programacion aplicada//
+//jean marco bastidas ayala//
+//alexis martinez carrasquero//
+#include<iostream>
+using namespace std;
+
+class PLC{
+public:
+    string nombre;
+    int anoFabricacion;
+    string marca;
+    string estacion;
+    string ip;
+    string mac;
+
+    PLC(string _nombre,int _anoFabricacion,string _marca,string _estacion,string _ip,string _mac){
+        nombre=_nombre;
+        anoFabricacion=_anoFabricacion;
+        marca=_marca;
+        estacion=_estacion;
+        ip=_ip;
+        mac=_mac;
+    }
+    ~PLC(){}
+};
+
+class MOTOR{
+public:
+    string nombre;
+    int anoFabricacion;
+    string marca;
+    string estacion;
+    string potenciaNominal;
+    string torqueNominal;
+    string corrienteNominal;
+    string potenciaMedida;
+
+    MOTOR(string _nombre,int _anoFabricacion,string _marca,string _estacion,
+         string _potenciaNominal,string _torqueNominal,string _corrienteNominal,string _potenciaMedida){
+        nombre=_nombre;
+        anoFabricacion=_anoFabricacion;
+        marca=_marca;
+        estacion=_estacion;
+        potenciaNominal=_potenciaNominal;
+        torqueNominal=_torqueNominal;
+        corrienteNominal=_corrienteNominal;
+        potenciaMedida=_potenciaMedida;
+    }
+    ~MOTOR(){}
+};
+
+class SENSOR{
+public:
+    string nombre;
+    int anoFabricacion;
+    string marca;
+    string estacion;
+    string ip;
+    string mac;
+    string rango;
+    string unidad;
+    string tipoVariable;
+    string medidaSensor;
+
+    SENSOR(string _nombre,int _anoFabricacion,string _marca,string _estacion,
+          string _ip,string _mac,string _rango,string _unidad,string _tipoVariable,string _medidaSensor){
+        nombre=_nombre;
+        anoFabricacion=_anoFabricacion;
+        marca=_marca;
+        estacion=_estacion;
+        ip=_ip;
+        mac=_mac;
+        rango=_rango;
+        unidad=_unidad;
+        tipoVariable=_tipoVariable;
+        medidaSensor=_medidaSensor;
+    }
+    ~SENSOR(){}
+};
+
+int main(){
+    string respuesta;
+
+    cout<<endl<<"¿Quieres ver los datos del PLC, motor o sensor? (Si/No): ";
+    cin>>respuesta;
+        if(respuesta=="Si"||respuesta=="si"||respuesta=="sI"||respuesta=="SI"){
+            cout<<"¿De cuál deseas ver la información? (PLC/Motor/Sensor): ";
+            cin>>respuesta;
+    
+            if(respuesta=="PLC"||respuesta=="plc"||respuesta=="Plc"){
+                PLC PLC1("PLC1",2013,"Siemens","ST2001","192.168.0.1","68:7F:74:12:34:56");
+                cout<<endl<<"============Datos del PLC1============"<<endl<<endl;
+                cout<<"Nombre: "<<PLC1.nombre<<endl;
+                cout<<"Año de Fabricación: "<<PLC1.anoFabricacion<<endl;
+                cout<<"Marca: "<<PLC1.marca << endl;
+                cout<<"Estación: "<<PLC1.estacion<<endl;
+                cout<<"IP: "<<PLC1.ip<<endl;
+                cout<<"MAC: "<<PLC1.mac<<endl;
+            } else if(respuesta=="Motor"||respuesta=="motor"||respuesta=="MOTOR"){
+                MOTOR MOTOR001("MOTOR001",2011,"ABB","ST2001","2.5 HP","20 N-m","10 A","Sin dato");
+                cout<<endl<<"============Datos del Motor001============"<<endl<<endl;
+                cout<<"Nombre: "<<MOTOR001.nombre<<endl;
+                cout<<"Año de Fabricación: "<<MOTOR001.anoFabricacion<<endl;
+                cout<<"Marca: "<<MOTOR001.marca<<endl;
+                cout<<"Estación: "<<MOTOR001.estacion<<endl;
+                cout<<"Potencia Nominal: "<<MOTOR001.potenciaNominal<<endl;
+                cout<<"Torque Nominal: "<<MOTOR001.torqueNominal<<endl;
+                cout<<"Corriente Nominal: "<<MOTOR001.corrienteNominal<<endl;
+                cout<<"Potencia Medida: "<<MOTOR001.potenciaMedida<<endl;
+            } else if(respuesta=="Sensor"||respuesta=="sensor"||respuesta=="SENSOR"){
+                SENSOR SENSOR001("SENSOR001",2015,"Siemens","ST2001","192.168.0.10","71:6E:13:62:75:34","-2 a 115","Celsius","Temperatura","Sin dato");
+                cout<<endl<<"============Datos del Sensor001============"<<endl<<endl;
+                cout<<"Nombre: "<<SENSOR001.nombre<<endl;
+                cout<<"Año de Fabricación: "<<SENSOR001.anoFabricacion<<endl;
+                cout<<"Marca: "<<SENSOR001.marca<<endl;
+                cout<<"Estación: "<<SENSOR001.estacion<<endl;
+                cout<<"IP: "<<SENSOR001.ip<<endl;
+                cout<<"MAC: "<<SENSOR001.mac<<endl;
+                cout<<"Rango: "<<SENSOR001.rango<<endl;
+                cout<<"Unidad: "<<SENSOR001.unidad<<endl;
+                cout<<"Tipo de Variable: "<<SENSOR001.tipoVariable<<endl;
+                cout<<"Medida de sensor: "<<SENSOR001.medidaSensor<<endl;
+            } else{
+                cout<<endl<<"======================================="<<endl;
+                cout<<endl<<"Respuesta incorrecta, recuerde colocar la informacion que desea obtener puede ser del PLC/Motor/Sensor, vuelva a ejecutar el programa."<<endl;
+            }
+        } else if(respuesta=="No"||respuesta=="no"||respuesta=="nO"||respuesta=="NO"){
+            cout<<endl<<"======================================="<<endl;
+            cout <<endl<<"Ok, cuando quiera ver algun dato ejecute el programa."<<endl;
+        } else {
+            cout<<endl<<"======================================="<<endl;
+            cout<<endl<<"Respuesta incorrecta, recuerda que tienes dos opciones de respuesta, (Si o No), ejecute el programa nuevamente."<<endl;
+        }
+    cout<<endl<<"======================================="<<endl;
+    cout<<endl<<"Este programa ha sido realizado por:"<<endl;
+    cout<<"Alexis Martinez y Jean Bastidas"<<endl;
+    cout<<"  WI003952517      WI77269122"<<endl;
+    cout<<"Para el curso: Programacion aplicada 01.";
+
+    return 0;
+}
